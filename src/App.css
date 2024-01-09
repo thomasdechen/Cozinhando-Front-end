@@ -1,0 +1,239 @@
+/* Fonts */
+@font-face {
+    font-family: 'Outfit-thin';
+    src: url('fonts\Outfit\Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+header a {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.logo img {
+    max-width: 250px;
+    height: auto;
+}
+
+.nav-items ul {
+    display: flex;
+}
+
+.nav-items ul li {
+    display: flex;
+    padding: 0px 15px;
+}
+
+.nav-items ul li a:hover {
+    color: rgb(255, 79, 28); 
+}
+  
+
+/* Dropdown refeíções */
+
+.nav-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-items ul li {
+  position: relative;
+}
+
+.nav-items ul li:hover ul {
+  display: block;
+}
+
+.nav-items ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.nav-items ul ul li {
+  display: block;
+}
+
+/* Search Box */
+
+.search-bar {
+    background-color: rgb(209, 209, 209); 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 600px;
+    margin-top: 100px;
+}
+  
+input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    color: black !important;
+    text-align: center;
+}
+
+::placeholder {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    color: black !important;
+    text-align: center;
+}
+
+.search-bar.focused input::placeholder {
+    visibility: hidden;
+  }
+
+/* Cards */
+.cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    padding: 50px 0px;
+}
+
+.cards h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 36px;
+    color: black !important;
+    font-weight: bold;
+}
+  
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+#bestRecipes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bestRecipes img {
+    padding: 8px 0px 0px 0px;
+    width: 50px;
+}
+  
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    background-color: lightgray;
+    padding: 25px 0px 0px 0px;
+}
+
+footer section{
+    width: 33%;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.line1 {
+    margin-left: 13%;
+}
+
+.line2 {
+    font-weight: bold;
+    padding: 70px 0px 0px 0px;
+}
+
+.line3 {
+    padding: 70px 0px 0px 0px;
+}
+
+.logo-footer {
+    width: 70%;
+}
+
+.social-footer{
+    width: 30%;
+}
+
+@media only screen and (max-width: 800px) {
+    .search-bar {
+        width: 300px;
+    }
+
+    header a {
+        font-family: 'Outfit', sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s ease; 
+    }
+
+    .logo img {
+        max-width: 100px;
+        height: auto;
+        margin-left: 5px;
+    }
+
+    .nav-items ul li {
+        display: flex;
+        padding: 0px 5px;
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        padding: 50px 0px;
+    }
+    
+    .cards h1 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 26px;
+        color: black !important;
+        font-weight: bold;
+    }
+    
+    #bestRecipes img {
+        padding: 8px 0px 0px 0px;
+        width: 50px;
+    }
+
+
+  }
