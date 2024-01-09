@@ -1,3 +1,19 @@
+Front-end com React do site Cozinhando...
+
+Site onde o usuário pode compartilhar suas receitas.
+
+Repósitorio do Back-end com Java Spring: https://github.com/thomasdechen/Cozinhando-Back-end
+
+Segue abaixo imagem real do site, no momento é possível adicionar receitas no site e as receitas são organizadas automaticamente nas duas sessões de "As melhores receitas" e "O que há de novo".
+
+![Imagem do Site](https://github.com/thomasdechen/Cozinhando-Back-end/blob/main/Site%20Cozinhando.png)
+
+
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
